@@ -1,0 +1,2 @@
+# MediaPipe Face Landmarker model is downloaded here (see README).
+# The .task file is gitignored because it is large (~3.6 MB).

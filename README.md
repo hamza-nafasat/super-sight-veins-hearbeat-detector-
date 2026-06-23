@@ -32,8 +32,8 @@ pip install -r requirements.txt
 
 | # | Milestone | Status |
 |---|-----------|--------|
-| M1 | Environment setup + live webcam preview | **In progress** |
-| M2 | Face detection and region of interest | Not started |
+| M1 | Environment setup + live webcam preview | **Complete** |
+| M2 | Face detection and region of interest | **In progress** |
 | M3 | Extract raw color signal from face | Not started |
 | M4 | Filter and process the pulse signal | Not started |
 | M5 | Estimate heart rate (BPM) | Not started |
@@ -48,3 +48,14 @@ python m1_webcam.py
 ```
 
 You should see a window titled **SuperSight M1** with live video, and the console should print frame width, height, and FPS. Press **q** to quit.
+
+## Milestone 2 — Face detection + forehead ROI
+
+The Face Landmarker model lives in `models/face_landmarker.task` (downloaded once during setup).
+
+```bash
+source venv/bin/activate
+python m2_face_roi.py
+```
+
+You should see a window titled **SuperSight M2** with a gray face outline, a **green rectangle on your forehead**, and **"No face detected"** if you leave the frame. Press **q** to quit.

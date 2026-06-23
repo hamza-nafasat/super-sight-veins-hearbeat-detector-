@@ -1,2 +1,51 @@
-venv
-.cursor
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- Secrets & local config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+config.local.*
+
+# --- Cursor / IDE (machine-specific) ---
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- MediaPipe model (large; download via README) ---
+models/*.task
+
+# --- Runtime output (webcam captures, logs) ---
+output/
+recordings/
+*.avi
+*.mp4
+*.mkv
+*.log
