@@ -33,8 +33,8 @@ pip install -r requirements.txt
 | # | Milestone | Status |
 |---|-----------|--------|
 | M1 | Environment setup + live webcam preview | **Complete** |
-| M2 | Face detection and region of interest | **In progress** |
-| M3 | Extract raw color signal from face | Not started |
+| M2 | Face detection and region of interest | **Complete** |
+| M3 | Extract raw color signal from face | **In progress** |
 | M4 | Filter and process the pulse signal | Not started |
 | M5 | Estimate heart rate (BPM) | Not started |
 | M6 | On-screen display and smoothing | Not started |
@@ -59,3 +59,12 @@ python m2_face_roi.py
 ```
 
 You should see a window titled **SuperSight M2** with a gray face outline, a **green rectangle on your forehead**, and **"No face detected"** if you leave the frame. Press **q** to quit.
+
+## Milestone 3 — Raw color signal capture
+
+```bash
+source venv/bin/activate
+python m3_signal.py
+```
+
+You should see **SuperSight M3** with the forehead ROI, plus a HUD showing the **raw green average**, **sample count**, and **measured sampling rate (Hz)**. If you leave the frame, sampling pauses and **"No face — signal paused"** appears. Press **q** to quit.
